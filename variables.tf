@@ -19,19 +19,19 @@ variable "resource_group_name" {
 variable "security_rule" {
   description = <<EOD
 Configuration delegations on security
-  `security_rule = {
-    example = {
-      name                       = string
-      priority                   = number
-      direction                  = string
-      access                     = string
-      protocol                   = string
-      source_port_range          = string
-      destination_port_range     = string
-      source_address_prefix      = string
-      destination_address_prefix = string
-    }
-  }`
+  `security_rule = {`
+    `example = {`
+      `name                       = string`
+      `priority                   = number`
+      `direction                  = string`
+      `access                     = string`
+      `protocol                   = string`
+      `source_port_range          = string`
+      `destination_port_range     = string`
+      `source_address_prefix      = string`
+      `destination_address_prefix = string`
+    `}`
+  `}`
 EOD
   type = map 
   default = {}
