@@ -58,7 +58,7 @@ No modules.
 | azure\_location | The location/region where the virtual network is created. Changing this forces a new resource to be created. | `string` | yes |
 | network\_security\_group\_name | The name of the network security group. Changing this forces a new resource to be created. | `string` | yes |
 | resource\_group\_name | The name of the resource group in which to create the virtual network. Changing this forces a new resource to be created. | `string` | yes |
-| security\_rule | Configuration delegations on security<br>  `security_rule = {`<br>    `example = {`<br>      `name                       = string`<br>      `priority                   = number`<br>      `direction                  = string`<br>      `access                     = string`<br>      `protocol                   = string`<br>      `source_port_range          = string`<br>      `destination_port_range     = string`<br>      `source_address_prefix      = string`<br>      `destination_address_prefix = string`<br>    `}`<br>  `}` | `map` | no |
+| security\_rule | <pre>hcl<br>Configuration delegations on security<br>  security_rule = {<br>    example = {<br>      name                       = string<br>      priority                   = number<br>      direction                  = string<br>      access                     = string<br>      protocol                   = string<br>      source_port_range          = string<br>      destination_port_range     = string<br>      source_address_prefix      = string<br>      destination_address_prefix = string<br>    }<br>  }</pre> | `map` | no |
 | tags | A mapping of tags to assign to the resource. | `map` | no |
 
 ## Outputs
