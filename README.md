@@ -39,7 +39,7 @@ module "network_security_group" {
 
 | Name | Version |
 |------|---------|
-| azurerm | n/a |
+| azurerm | >= 2.0.0 |
 
 ## Modules
 
@@ -63,7 +63,9 @@ No modules.
 
 ## Outputs
 
-No outputs.
+| Name | Description |
+|------|-------------|
+| network\_security\_group\_id | The ID of the Network Security Group. |
 
 ## Related documentation
 <!-- END_TF_DOCS -->
