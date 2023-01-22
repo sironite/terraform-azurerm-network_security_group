@@ -18,7 +18,7 @@ variable "resource_group_name" {
 
 variable "security_rule" {
   description = <<EOD
-```hcl
+```
 Configuration delegations on security
   security_rule = {
     example = {
