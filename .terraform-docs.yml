@@ -6,11 +6,18 @@ footer-from: "docs/footer-doc.tf"
 content: |-
   {{ .Header }}
 
-  # Examples
+  # Usage - Module
 
+  ## multiple network security groups with rules
   ```hcl
-  {{ include "examples/example1/module.tf" }}
+  {{ include "examples/multiple-network-security-groups-with-rules-example/main.tf" }}
   ```
+
+  ## network security group without rules
+  ```hcl
+  {{ include "examples/network-security-group-without-rules-example/main.tf" }}
+  ```
+
   {{ .Providers }}
 
   {{ .Modules }}
