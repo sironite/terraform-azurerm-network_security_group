@@ -2,8 +2,7 @@ resource "azurerm_network_security_group" "this" {
   name                = var.network_security_group_name
   location            = var.azure_location
   resource_group_name = var.resource_group_name
-
-
+  
   dynamic "security_rule" {
     for_each = var.security_rule != null ? var.security_rule : {}
     content {
