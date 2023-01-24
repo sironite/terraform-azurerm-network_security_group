@@ -35,13 +35,13 @@ Configuration delegations on security
   }
 ```
 EOD
-  type = map 
-  default = {}
-  
+  type        = map(any)
+  default     = {}
+
 }
 
 variable "tags" {
   description = " A mapping of tags to assign to the resource."
-  type        = map
+  type        = map(any)
   default     = {}
 }

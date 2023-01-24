@@ -9,7 +9,7 @@ Using the modules requires the following pre-requisites:
 
 ## Usage
 
-`resource_group`
+`network_security_group`
 
 ```hcl
 module "network_security_group" {
