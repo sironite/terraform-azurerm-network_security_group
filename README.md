@@ -1,6 +1,6 @@
 <!-- BEGIN_TF_DOCS -->
  # Network Security Group
-[![Changelog](https://img.shields.io/badge/changelog-release-green.svg)](CHANGELOG.md) [![Notice](https://img.shields.io/badge/notice-copyright-yellow.svg)](NOTICE) [![Apache V2 License](https://img.shields.io/badge/license-Apache%20V2-orange.svg)](LICENSE) [![TF Registry](https://img.shields.io/badge/terraform-registry-blue.svg)](https://registry.terraform.io/)
+[![Changelog](https://img.shields.io/badge/changelog-release-green.svg)](https://github.com/sironite/terraform-azurerm-network_security_group/releases) [![Notice](https://img.shields.io/badge/notice-copyright-yellow.svg)](NOTICE) [![Apache V2 License](https://img.shields.io/badge/license-Apache%20V2-orange.svg)](LICENSE) [![TF Registry](https://img.shields.io/badge/terraform-registry-blue.svg)](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/network_security_group)
 
 # Usage - Module
 
@@ -58,8 +58,8 @@ No modules.
 | azure\_location | The location/region where the virtual network is created. Changing this forces a new resource to be created. | `string` | yes |
 | network\_security\_group\_name | The name of the network security group. Changing this forces a new resource to be created. | `string` | yes |
 | resource\_group\_name | The name of the resource group in which to create the virtual network. Changing this forces a new resource to be created. | `string` | yes |
-| security\_rule | <pre>Configuration delegations on security<br>  security_rule = {<br>    example = {<br>      name                       = string<br>      priority                   = number<br>      direction                  = string<br>      access                     = string<br>      protocol                   = string<br>      source_port_range          = string<br>      destination_port_range     = string<br>      source_address_prefix      = string<br>      destination_address_prefix = string<br>    }<br>  }</pre> | `map` | no |
-| tags | A mapping of tags to assign to the resource. | `map` | no |
+| security\_rule | <pre>Configuration delegations on security<br>  security_rule = {<br>    example = {<br>      name                       = string<br>      priority                   = number<br>      direction                  = string<br>      access                     = string<br>      protocol                   = string<br>      source_port_range          = string<br>      destination_port_range     = string<br>      source_address_prefix      = string<br>      destination_address_prefix = string<br>    }<br>  }</pre> | `map(any)` | no |
+| tags | A mapping of tags to assign to the resource. | `map(any)` | no |
 
 ## Outputs
 
